@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <script src="{% static 'maze/js/bootstrap.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'maze/css/bootstrap.min.css' %}">
+    <script src="{% static 'maze/js/jquery.js' %}"></script>
+</head>
+
+<body style="background-color: #F0ECE3;">
+    <div class="container">
+        <div class="row justify-content-center d-flex align-items-center" style="height: 100vh;">
+            <div class="col-md-4">
+                <a href="solve" class="text-decoration-none">
+                    <div class="card text-center">
+                        <div class="fs-4 card-body">
+                            Upload & Solving Mazes
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="generate" class="text-decoration-none">
+                    <div class="card text-center">
+                        <div class="fs-4 card-body">
+                            Generate & Solving Mazes
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar fixed-bottom d-flex justify-content-center navbar-light bg-light">
+        <div class="navbar-text text-uppercase font-weight-bold">
+            @Copyright Hatem
+        </div>
+    </nav>
+</body>
+
+</html>

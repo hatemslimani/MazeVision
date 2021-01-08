@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSIR</title>
+    <script src="{% static 'maze/js/bootstrap.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'maze/css/bootstrap.min.css' %}">
+    <script src="{% static 'maze/js/jquery.js' %}"></script>
+</head>
+
+<body style="background-color: #F0ECE3;">
+    <div class="ldss" id="dd">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <h1 class="text-decoration-underline" style="color: blueviolet;">
+                    Solving Mazes With Python
+                </h1>
+                <img id="" src="{% static 'maze/maze.png' %}" alt="" style="width: 60px;height: 60px;" />
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6 text-center ">
+                <form name="uploader">
+                    <div class="input-group">
+                        <input accept="image/*" type='file' id="imgInp" class="form-control"
+                            aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                        <button class="btn btn-outline-primary" type="button" id="btnn">Solve</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6 text-center">
+                <h1 style="color: blueviolet;">
+                    Initial Maze
+                </h1>
+                <img id="imgDisp" src="#" alt="" />
+            </div>
+            <div class="col-md-6 text-center">
+                <h1 style="color: blueviolet;">
+                    Solved Maze
+                </h1>
+                <img src="" id="responde" alt="">
+            </div>
+        </div>
+    </div>
+    <div style="height: 100px;"></div>
+    <nav class="navbar fixed-bottom d-flex justify-content-center navbar-light bg-light">
+        <div class="navbar-text text-uppercase font-weight-bold">
+            @Copyright Hatem
+        </div>
+    </nav>
+</body>
+
+</html>
+<script src="{% static 'maze/js/scrpt.js' %}"></script>
+<style>
+    img {
+        max-width: 700px;
+        max-height: 700px;
+    }
+    .ldss {
+        display: inline-block;
+        position: absolute;
+        top: 45%;
+        left: 45%;
+        width: 80px;
+        height: 80px;
+    }
+
+    .ldss div {
+        display: inline-block;
+        position: absolute;
+        left: 8px;
+        width: 16px;
+        background: rgb(34, 31, 31);
+        animation: ldss 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+    }
+
+    .ldss div:nth-child(1) {
+        left: 8px;
+        animation-delay: -0.24s;
+    }
+
+    .ldss div:nth-child(2) {
+        left: 32px;
+        animation-delay: -0.12s;
+    }
+
+    .ldss div:nth-child(3) {
+        left: 56px;
+        animation-delay: 0;
+    }
+
+    @keyframes ldss {
+        0% {
+            top: 8px;
+            height: 64px;
+        }
+
+        50%,
+        100% {
+            top: 24px;
+            height: 32px;
+        }
+    }
+</style>
