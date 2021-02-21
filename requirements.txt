@@ -1,0 +1,11 @@
+# Data Processing & Visualization
+numpy>=1.21.0
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# Image & Video Processing
+ffmpeg-python>=0.2.0
+
+# Image Processing
+Pillow>=8.2.0
+opencv-python>=4.5.0
