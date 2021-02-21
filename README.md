@@ -66,7 +66,7 @@ Create and solve custom mazes with powerful algorithms:
 * Dual-point marker system for start/end positions
 * Coordinate tracking with precise offset calculations
 * Visual feedback through styled markers
-* Real-time solution visualization
+* Solution visualization
 
 ## Getting Started
 
