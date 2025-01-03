@@ -80,7 +80,7 @@ Create and solve custom mazes with powerful algorithms:
 
 1. Clone the repository:
 ```bash
-git clone [repo-url]
+git clone https://github.com/hatemslimani/MazeVision.git
 ```
 
 2. Install Python dependencies:
