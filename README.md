@@ -5,6 +5,7 @@ A web application that generates and solves mazes through multiple algorithms an
 ## Features
 
 ### Image-based Maze Solver
+
 Transform any maze image into a solvable puzzle:
 * Upload existing maze images and convert them into solvable formats
 * Interactive point selection for start and end positions
